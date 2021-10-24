@@ -1,0 +1,80 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to left, #333a44, #618579);
+}
+
+div#wrapper {
+    width: 320px;
+    height: 520px;
+    background-color: #d8e1e7;
+    position: relative;
+    margin: 5px 100px;
+    box-shadow: 0 4px 8px rgba(231, 222, 222, 0.2);
+    border-radius: 5px;
+}
+
+div#wrapper>div#result>#kq {
+    height: 120px;
+    border-radius: 5px;
+    background-color: #ffeeff;
+    width: 97%;
+    font-size: 50px;
+}
+
+.zoom {
+    background-color: greenyellow !important;
+}
+
+div#wrapper>div#keyboard {
+    height: 400px;
+    background-color: #f8bbd0;
+    border-radius: 5px;
+}
+
+.system,
+.number,
+.blur {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #ffcdd2;
+}
+
+.system,
+.number {
+    cursor: pointer;
+}
+
+.blur {
+    background-color: #f8bbd0;
+}
+
+.system:active,
+.number:active {
+    font-size: 13px;
+}
+
+button:nth-child(4) {
+    background-color: #a5a9b3;
+}
+
+button:nth-child(8) {
+    background-color: #676e6e;
+}
+
+button:nth-child(12) {
+    background-color: #6b2039;
+}
+
+button:nth-child(16) {
+    background-color: #deebdf;
+}
+
+button:nth-child(20) {
+    background-color: #5a0ca3;
+}
