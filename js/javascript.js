@@ -20,18 +20,18 @@ function set_num(num) {
 
 
 function set_math(math) {
-    // document.getElementById(cal[cal.length - 1]).classList.remove("zoom");
+    // document.getElementById(cal[cal.length - 1]).classList.remove("");
     if (cal[cal.length - 1] != "+" && cal[cal.length - 1] != "-" && cal[cal.length - 1] != "*" && cal[cal.length - 1] != "/" && cal[cal.length - 1] != "%") {
         cal += math;
         console.log("true");
     } else {
         oldMath = cal[cal.length - 1];
-        document.getElementById(oldMath).classList.remove("zoom");
+       
         cal = cal.slice(0, -1);
         cal += math;
     }
     newMath = cal[cal.length - 1];
-    document.getElementById(cal[cal.length - 1]).classList.add("zoom");
+   
     oldMath = newMath;
     console.log(cal[cal.length - 1])
 
@@ -81,7 +81,7 @@ function delete_all() {
 
 function set_result() {
     document.getElementById('kq').value = eval(cal);
-    document.getElementById(newMath).classList.remove("zoom");
+   
     oldMath = newMath;
     print = '';
     cal = '';
